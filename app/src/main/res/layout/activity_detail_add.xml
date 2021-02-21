@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    tools:context="com.example.busyatri.AddDetail"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="90dp">
+
+        <TextView
+            android:id="@+id/dep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dep"
+            android:textSize="0dp"/>
+
+        <TextView
+            android:id="@+id/dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dest"
+            android:textSize="0dp"
+            />
+
+        <TextView
+            android:id="@+id/bnmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bnmb"
+            android:textSize="0dp"/>
+
+        <TextView
+            android:id="@+id/bname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bname"
+            android:textSize="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:id="@+id/price"
+            android:textSize="0dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add some details"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="369dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="170dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="364dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_td"
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/td"
+                android:layout_alignTop="@+id/td"
+                android:layout_alignBottom="@+id/td"
+                android:src="@drawable/cal" />
+
+
+            <RelativeLayout
+                android:layout_width="164dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:background="#d2a68b"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/td"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Travel Date"
+
+
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="164dp"
+                android:layout_height="50dp"
+                android:background="#d2a68b"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:editable="false"
+                    android:hint="DD/MM/YYYY"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageView
+        android:id="@+id/img_CN"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/contact"
+        android:layout_alignTop="@+id/contact"
+        android:layout_alignBottom="@+id/contact"
+        android:src="@drawable/ic_phone_black_24dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="339dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:hint="Contact number"
+        android:inputType="textPhonetic"
+        android:maxLines="1"
+        android:src="@drawable/shape"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/adddetail"
+            android:layout_width="135dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:text="Add details"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+<!--
+
+        <TextView
+            android:id="@+id/nep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="470dp"
+            android:layout_marginLeft="80dp"
+            android:text="Some tourism places in Nepal"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/col" />
+
+
+
+
+-->
+
+
+
+</RelativeLayout>

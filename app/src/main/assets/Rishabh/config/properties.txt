@@ -1,0 +1,8 @@
+url:http://djustice-android.tumblr.com
+name:Rishabh
+email:Rishabhshresthad@gmail.com
+gender:male
+botmaster:Rishabh Shrestha
+organization:Medkumo
+version:0.0.1
+
